@@ -6,6 +6,7 @@ namespace BlaisePascal.ExEnemyOrPlayer.Domain
 {
     public class Enemy
     {
+        /*
         // Backing field
         private int _health;
 
@@ -63,7 +64,7 @@ namespace BlaisePascal.ExEnemyOrPlayer.Domain
                 Health -= damage;
             }
         }
-
+*/
     }
 }
    
