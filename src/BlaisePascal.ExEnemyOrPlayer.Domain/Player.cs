@@ -27,7 +27,7 @@
         public int Experience
         {
             get
-            { 
+            {
                 return _experience;
             }
             private set
@@ -41,7 +41,7 @@
         public int Health
         {
             get
-            { 
+            {
                 return _health;
             }
             private set
@@ -64,12 +64,12 @@
         public int MaxHealth
         {
             get
-            { 
+            {
                 return _maxHealth;
             }
             private set
             {
-                if(value < _health) { throw new ArgumentException("The value of the maximum health cant be less than the health"); }
+                if (value < _health) { throw new ArgumentException("The value of the maximum health cant be less than the health"); }
                 else if (value <= 0)
                 {
                     _maxHealth = 100;
@@ -87,7 +87,7 @@
             }
             private set
             {
-                if(value < 0)
+                if (value < 0)
                 { _gold = 0; }
                 else
                 { _gold = value; }
@@ -108,10 +108,10 @@
 
         public void AddExperience(int amount)
         {
-            if(amount <= 0) { throw new ArgumentException("Cant add a negative or zero amount"); }
+            if (amount <= 0) { throw new ArgumentException("Cant add a negative or zero amount"); }
 
             Experience += amount;
-            while(Experience >= 100)
+            while (Experience >= 100)
             {
                 Level += 1;
                 Experience -= 100;
@@ -128,7 +128,7 @@
             if (amount <= 0 || IsAlive == false) { throw new ArgumentException("Error"); }
 
             Health -= amount;
-            if(Health == 0)
+            if (Health == 0)
             {
                 IsAlive = false;
             }
@@ -139,7 +139,7 @@
             if (amount <= 0 || IsAlive == false) { throw new ArgumentException("Error"); }
 
             Health += amount;
-            if(Health > MaxHealth)
+            if (Health > MaxHealth)
             {
                 Health = MaxHealth;
             }
@@ -161,3 +161,4 @@
 
     }
 }
+

@@ -9,7 +9,7 @@ namespace BlaisePascal.ExEnemyOrPlayer
             Console.WriteLine("=== PLAYER CLASS TEST ===");
 
             // 1. Player Creation
-            Player player = new Player("Arthur");
+            Player player = new Player("Marc");
             Console.WriteLine($"[Name: {player.Name}] Level: {player.Level} | XP: {player.Experience} | Health: {player.Health}/{player.MaxHealth} | IsAlive: {player.IsAlive} | Gold: {player.Gold}");
 
             // 2. Experience and Level Up Test
