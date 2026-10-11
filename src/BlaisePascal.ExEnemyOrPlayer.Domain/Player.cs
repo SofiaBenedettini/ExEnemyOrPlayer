@@ -128,7 +128,7 @@
             if (amount <= 0 || IsAlive == false) { throw new ArgumentException("Error"); }
 
             Health -= amount;
-            if (Health == 0)
+            if (Health <= 0)
             {
                 IsAlive = false;
             }
